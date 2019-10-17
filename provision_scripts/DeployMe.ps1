@@ -4,6 +4,13 @@ INCOMPLETE
 
 The following script was provided David Atkinson and still needs to be updated for my purposes.
 
+To do:
+1. Delete all the stuff to do with branching
+2. Keep the stuff that deploys SCA projects
+3. Reconfigure to deploy my StackOverflow and AdventureWorks projects
+   (Possibly extract into a function)
+4. Parameterize to make it re-usable, but add defaults for simple demos
+
 #>
 
 # If a branch is supplied, the script will switch to, or create a branch before provisioning
