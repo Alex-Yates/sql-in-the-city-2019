@@ -1,17 +1,15 @@
 param (
-    [string]$CloneServerUrl = 'http://ec2amaz-hduull0:14145', 
-    [string]$MachineName = 'EC2AMAZ-HDUULL0',
-    [string]$InstanceName = ''
+    [string]$cloneServerUrl = 'http://ec2amaz-hduull0:14145', 
+    [string]$machineName = 'EC2AMAZ-HDUULL0',
+    [string]$instanceName = ''
 )
 
-Connect-SqlClone -ServerUrl $CloneServerUrl
-$adImage = Get-SqlCloneImage -Name 'AdventureWorks'
-$soImage = Get-SqlCloneImage -Name 'StackOverflow'
-$SqlServerInstance = Get-SqlCloneSqlServerInstance -MachineName $MachineName -InstanceName $InstanceName
+Connect-SqlClone -ServerUrl $cloneServerUrl
+$image = Get-SqlCloneImage -Name 'StackOverflow2010'
+$sqlServerInstance = Get-SqlCloneSqlServerInstance -MachineName $machineName -InstanceName $instanceName
 
-Write-Output "Building clones"
+Write-Output "Building clone"
 
-New-SqlClone -Name 'AdventureWorks2017' -Location $SqlServerInstance -Image $adImage
-New-SqlClone -Name 'StackOverflow2010' -Location $SqlServerInstance -Image $soImage
+New-SqlClone -Name 'StackOverflow2010' -Location $sqlServerInstance -Image $image  | Wait-SqlCloneOperation
 
 Write-Output "Cloning complete"
