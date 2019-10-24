@@ -1,5 +1,5 @@
 # Declare the full path of the SCA project files
-$projectFile="${PSScriptRoot}\..\databases\StackOverflow\StackOverflow.sqlproj"
+$projectFile="${PSScriptRoot}\..\databases\StackOverflow\StackOverflow\StackOverflow.sqlproj"
 
 # Create the database build artifact object required to deploy the update to the dev database
 # (I don't need to 'build' a database as I'm not concerned with validation so use New-DatabaseProjectObject instead of Invoke-DatbaesBuild)
