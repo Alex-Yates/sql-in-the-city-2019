@@ -201,4 +201,7 @@
   <ItemGroup>
     <None Include="Programmable Objects\dbo\Stored Procedures\f2.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmable Objects\dbo\Stored Procedures\h1.sql" />
+  </ItemGroup>
 </Project>
