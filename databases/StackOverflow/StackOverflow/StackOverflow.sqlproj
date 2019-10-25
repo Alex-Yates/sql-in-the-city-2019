@@ -170,6 +170,9 @@
     <Folder Include="Schema-Model\dbo\Tables\" />
     <Folder Include="Schema-Model\Security\" />
     <Folder Include="Schema-Model\Security\Users\" />
+    <Folder Include="Programmable Objects\" />
+    <Folder Include="Programmable Objects\dbo\" />
+    <Folder Include="Programmable Objects\dbo\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
@@ -191,5 +194,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Schema-Model\Security\Users\student.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmable Objects\dbo\Stored Procedures\Test.sql" />
   </ItemGroup>
 </Project>
