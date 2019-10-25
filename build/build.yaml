@@ -1,0 +1,6 @@
+steps:
+- task: redgatesoftware.redgateDlmAutomationBuild.DlmAutomationBuildTask.RedgateSqlChangeAutomationBuild@3
+  displayName: 'Build SQL Change Automation Project StackOverflow'
+  inputs:
+    sqlProj: databases/StackOverflow/StackOverflow/StackOverflow.sqlproj
+    packageName: StackOverflow
