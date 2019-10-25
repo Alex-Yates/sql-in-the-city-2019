@@ -198,4 +198,7 @@
   <ItemGroup>
     <None Include="Programmable Objects\dbo\Stored Procedures\Test.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmable Objects\dbo\Stored Procedures\f1.sql" />
+  </ItemGroup>
 </Project>
